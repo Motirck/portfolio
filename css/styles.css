@@ -185,7 +185,7 @@ a {
 }
 
 a:hover {
-  color: #48734d;
+  color: #42994c;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -309,7 +309,7 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
 
 .nav-link.active, .show>.nav-link {
   color: #fff;
-  background-color: #48734d;
+  background-color: #42994c;
 }
 
 .nav-fill>.nav-link, .nav-fill .nav-item {
@@ -828,7 +828,7 @@ section.resume-section .resume-section-content {
 }
 
 .text-primary {
-  color: #48734d !important;
+  color: #42994c !important;
 }
 
 .text-warning {
@@ -837,4 +837,8 @@ section.resume-section .resume-section-content {
 
 .collapse:not(.show) {
   display: none;
+}
+
+.word-spacing-text{
+  word-spacing: 0.3em;
 }
