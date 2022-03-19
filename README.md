@@ -1,3 +1,3 @@
-## Ricardo's Portfolio
+## Ricardo's portfolio 🚀
 
-- Reach me out!
+- Take a look! 😉
