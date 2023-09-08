@@ -193,7 +193,7 @@ a {
 }
 
 a:hover {
-  color: #42994c;
+  color: #5027d5;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -317,7 +317,7 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
 
 .nav-link.active, .show>.nav-link {
   color: #fff;
-  background-color: #42994c;
+  background-color: #5027d5;
 }
 
 .nav-fill>.nav-link, .nav-fill .nav-item {
@@ -836,7 +836,7 @@ section.resume-section .resume-section-content {
 }
 
 .text-primary {
-  color: #42994c !important;
+  color: #5027d5 !important;
 }
 
 .text-warning {
