@@ -1,389 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!doctype html>
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta name="google" content="notranslate">
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'pt,en',
-                layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT
-            }, 'google_translate_element');
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ricardo Alves Paula — Senior .NET Developer</title>
+  <meta name="description" content="Portfolio of Ricardo Alves Paula, Senior .NET Developer specializing in C#, ASP.NET Core, REST APIs, Azure, and clean architecture.">
+  <meta property="og:title" content="Ricardo Alves Paula — Senior .NET Developer">
+  <meta property="og:description" content="Portfolio, resume, skills, and experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%94%A7%3C/text%3E%3C/svg%3E">
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              200: '#c7d2fe',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca'
+            }
+          }
         }
-    </script>
-    <script type="text/javascript"
-            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
-    <title>Portfolio - Ricardo Alves Paula</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
-          type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css"/>
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet"/>
+      },
+      darkMode: 'media'
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html, body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji'; }
+  </style>
 </head>
-
-<body id="page-top">
-<div id="google_translate_element"></div>
-<!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Ricardo Alves Paula</span>
-        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                                             src="assets/img/profile.png" alt="..."/></span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-            class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-        </ul>
+<body class="bg-white text-slate-800 dark:bg-slate-950 dark:text-slate-100">
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-950/60 border-b border-slate-200/60 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="font-semibold text-slate-900 dark:text-white">Ricardo Alves Paula</a>
+      <nav class="hidden sm:flex gap-6 text-sm" aria-label="Primary">
+        <a href="#about" class="hover:text-brand-600">About</a>
+        <a href="#skills" class="hover:text-brand-600">Skills</a>
+        <a href="#experience" class="hover:text-brand-600">Experience</a>
+        <a href="#education" class="hover:text-brand-600">Education</a>
+        <a href="#project" class="hover:text-brand-600">Project</a>
+        <a href="#contact" class="hover:text-brand-600">Contact</a>
+      </nav>
+      <a id="btnLinkedIn" class="inline-flex items-center gap-2 rounded-lg bg-brand-600 text-white px-3 py-2 text-sm shadow hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-600" target="_blank" rel="noopener" aria-label="Open LinkedIn">LinkedIn</a>
     </div>
-</nav>
-<!-- Page Content-->
-<div class="container-fluid p-0">
-    <!-- About-->
-    <section class="resume-section" id="about">
-        <div class="resume-section-content">
-            <h1 class="mb-0">
-                Ricardo Alves Paula
-            </h1>
-            <h2 class="mb-0">
-                <span class="text-primary">.NET Developer</span>
-            </h2>
-            <div class="subheading mb-5">
-                <i class="fas fa-envelope-square"></i>
-                <a href="mailto:ricardo.alves.p001@gmail.com">ricardo.alves.p001@gmail.com</a>
-            </div>
-            <div class="text-justify">
-                <p class="lead mb-5">Professional with experience in Software Development, who knows how to use technologies, 
-                    programming languages, and frameworks such as C# (.NET) and Node.js in the back-end, Angular in the front-end, 
-                    Git and SVN for systems versioning, GitHub and Bitbucket. Always striving for high code quality, writing unit 
-                    and integration tests, applying standards such as SOLID, Design Patterns, Clean Code, and Clean Architecture, 
-                    from planning to development and deployment of new applications through CI/CD pipelines, in addition to 
-                    maintenance and support for existing applications.
-                    <br><br>
-                    He also has experience in migrating legacy systems to current technologies. Finally, a 
-                    professional with ease of communication and who knows how to work in groups (squads), 
-                    using agile methodologies such as SAFe and Scrum.
-                </p>
-            </div>
-            <div class="social-icons">
-                <a class="social-icon linkedin-color" href="https://www.linkedin.com/in/ricardoalvespaula/?locale=en_US"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a class="social-icon github-color" href="https://github.com/motirck"><i
-                        class="fab fa-github"></i></a>
-                <a class="social-icon twitter-color" href="https://twitter.com/ricardoalvesp01"><i
-                        class="fab fa-twitter"></i></a>
-                <a class="social-icon instagram-color" href="https://www.instagram.com/ricardoalvespaula/"><i
-                        class="fab fa-instagram"></i></a>
-            </div>
-            <div class="mt-3">
-                <a class="btn btn-outline-primary" href="Ricardo Alves V25 - EN-US.pdf" target="_blank" rel="noopener">View Resume (EN-US)</a>
-            </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section id="about" class="relative scroll-mt-24 md:scroll-mt-28">
+      <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <img src="assets/img/profile.png" alt="Profile photo of Ricardo Alves Paula" class="w-64 h-64 md:w-72 md:h-72 rounded-full object-cover ring-2 ring-brand-200 dark:ring-slate-800 mb-4" loading="lazy">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+            <span id="name"></span>
+          </h1>
+          <p id="role" class="mt-3 text-lg text-slate-600 dark:text-slate-300"></p>
+          <p id="location" class="mt-1 text-slate-500"></p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a id="btnEmail" class="btn-secondary" href="#contact">Contact</a>
+            <a id="btnGitHub" class="btn-outline" target="_blank" rel="noopener">GitHub</a>
+            <a id="btnProject" class="btn-primary" target="_blank" rel="noopener" aria-label="Open featured project on GitHub">View Project</a>
+          </div>
         </div>
-    </section>
-    <hr class="m-0"/>
-    <!-- Experience-->
-    <section class="resume-section" id="experience">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Professional Experience</h2>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">.NET Developer</h3>
-                    <div class="subheading mb-3">CWI Software</div>
-                    <div class="mb-2">
-                        <b>👨‍💻.NET developer working on the client: Via (Casas Bahia, Ponto, and Extra)</b>
-                    </div>
-                    <ul>
-                        <a>✔️ .NET development using ASP.NET Core - C#</a><br>
-                        <a>✔️ Database used: SQLServer and MongoDB</a><br>
-                        <a>✔️ Unit testing with Xunit</a><br>
-                        <a>✔️ Design Patterns used: Circuit Breaker, Chain Of Responsibility, Factory, etc.</a><br>
-                        <a>✔️ Consumption of CI/CD pipelines GitHub Actions</a><br>
-                        <a>✔️ Docker and Kubernetes</a><br>
-                        <a>✔️ Application of SOLID and Clean Code principles</a><br>
-                        <a>✔️ Using the CQRS standard</a><br>
-                        <a>✔️ Domain-Driven Design (DDD)</a><br>
-                        <a>✔️ Using tools like Dynatrace, Elastic Search and Grafana</a><br>
-                        <a>✔️ Using SonarQube to ensure source code quality</a><br>
-                        <a>✔️ Version Control: Git (Gitflow)</a><br>
-                    </ul>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">May. 2022 - Current</span></div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">.NET Developer</h3>
-                    <div class="subheading mb-3">Stefanini IT Solutions</div>
-                    <div class="mb-2">
-                        <b>Clients: Raízen and Jackson Dawson who works for Ford</b>
-                    </div>
-                    <ul>
-                        <a>✔️ Acting on an international client (Jackson Dawson - United States)</a><br>
-                        <a>✔️ Back-end development using: ASP.NET Core - C# and NodeJS</a><br>
-                        <a>✔️ Front-end development using: Angularjs</a><br>
-                        <a>✔️ Azure DevOps</a><br>
-                        <a>✔️ Design Patterns</a><br>
-                        <a>✔️ Application of SOLID, Clean Code, and Clean Architecture</a><br>
-                        <a>✔️ Domain-Driven Design (DDD)</a><br>
-                        <a>✔️ Database used: SQLServer, Dynamo / Dynamoose e MySQL / Sequelize</a><br>
-                        <a>✔️ Version Control: Git and SVN (Trunk Based Development and Gitflow)</a><br>
-                        <a>✔️ Unit tests with Xunit and Jest</a><br>
-                        <a>✔️ Use of Serverless Framework</a><br>
-                        <a>✔️ Dependency injection with TypeDI</a><br>
-                        <a>✔️ Use of Microservices</a><br>
-                        <a>✔️ AWS - Amazon Web Services (SNS, SQS, Dynamo, Cloud Watch, SSM, S3)</a><br>
-                        <a>✔️ Terraform</a><br>
-                        <a>✔️ Agile methodology used: Scrum and Scaled Agile Framework® (SAFe®)</a><br>
-                        <a>✔️ Use of SonarQube to ensure source code quality</a><br>
-                        <a>✔️ Use of Management 3.0 in all projects</a><br>
-                        <a>✔️ Deliveries made by sprints with MVP (Minimum Viable Product) techniques.</a><br>
-                    </ul>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">Oct. 2020 - May 2022</span></div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">.NET Developer</h3>
-                    <div class="subheading mb-3">Tesis IT & Automation And One Way Consultoria TI</div>
-                    <ul>
-                        <a>✔️ Development of new WEB systems, using Angular and .NET (C#);</a><br>
-                        <a>✔️ Back-end Development (.NET Framework - C#);</a><br>
-                        <a>✔️ Front-end development (Angular 6);</a><br>
-                        <a>✔️ Migration of internal systems made in Visual Basic 5 (VB5) to WEB using Angular Framework (TypesScript, JavaScript, Node.js, HTML5, SCSS, Bootstrap) and .NET (WebAPI);</a><br>
-                        <a>✔️ Database used: Oracle;</a><br>
-                        <a>✔️ Creation of Services in C# language to be intermediaries between C++ (which accesses the Oracle Database) and the Applications Front-end;</a><br>
-                        <a>✔️ Version control of systems using Git and Azure DevOps Server.</a><br>
-                    </ul>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">Aug. 2018 - Sept. 2020</span></div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">Intern Informatics Technician</h3>
-                    <div class="subheading mb-3">Aperam South America</div>
-                    <ul>
-                        <a>✔️ Creation of SQLs for reports and dashboards with Power BI software.</a><br>
-                        <a>✔️ Maintenance and creation of Excel spreadsheets (in conjunction with Microsoft Office Access), in VBA (Visual Basic for Applications) language;</a><br>
-                        <a>✔️ Preparation of SQL's for querying the company's Database using Microsoft Query;</a><br>
-                        <a>✔️ Maintenance and creation of formulas in Excel and Drive;</a><br>
-                        <a>✔️ Use of Google Workspace tools (G-Suite);</a><br>
-                        <a>✔️ Detailed analysis of the coil process using PIMS (Process Information Management Systems) software in conjunction with PI System - OSIsoft.</a><br>
-                    </ul>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">Feb. 2017 - Aug. 2018</span></div>
-            </div>
+        <div class="md:justify-self-end">
+          <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-6 bg-gradient-to-br from-brand-50 to-white dark:from-slate-900 dark:to-slate-950">
+            <h2 class="font-semibold text-slate-800 dark:text-slate-100">Summary</h2>
+            <p id="summary" class="mt-2 text-slate-600 dark:text-slate-300 text-sm leading-relaxed"></p>
+            <ul id="highlights" class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm"></ul>
+          </div>
         </div>
+      </div>
     </section>
-    <hr class="m-0"/>
-    <!-- Education-->
-    <section class="resume-section" id="education">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Academic Education</h2>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">Única College of Ipatinga</h3>
-                    <div class="subheading mb-3">Bachelor's Degree, Computer Science</div>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">Feb. 2019 - Dez. 2021</span></div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">Federal Center for Technological Education (CEFET-MG)</h3>
-                    <div class="subheading mb-3">Technician Computing</div>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">Feb. 2016 - Dez. 2017</span></div>
-            </div>
-        </div>
+
+
+    <!-- Skills -->
+    <section id="skills" class="scroll-mt-24 md:scroll-mt-28 py-12 border-t border-slate-200 dark:border-slate-800">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-2xl font-bold">Skills</h2>
+        <div id="skillsList" class="mt-6 flex flex-wrap gap-2"></div>
+      </div>
     </section>
-    <hr class="m-0"/>
-    <!-- Skills-->
-    <!-- Awards-->
-    <section class="resume-section" id="awards">
-        <div class="resume-section-content">
-            <h2 class="mb-3">Certificações</h2>
-            <ul class="fa-ul mb-3">
-                <li>
-                    <img alt="Docker" title="Docker" height="250" src="assets/certifications/badge-docker.png">
-                    <img alt="Scrum" title="Scrum" height="200" src="assets/certifications/scrum.png"> &nbsp;
-                    <img alt="LGPD" title="LGPD" height="200" src="assets/certifications/lgpd.png"> <br> &ensp; &emsp;
-                    <img alt="Remote Work" title="Remote Work" height="200" src="assets/certifications/remote-work.png"> &nbsp;
-                    <img alt="Life Long Learning" title="Life Long Learning" height="200" src="assets/certifications/lifelong-learning.png"><br><br>
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fa fa-certificate text-warning"></i></span>
-                    Remote Work and Virtual Collaboration Professional Certificate - RWVCPC™
-                    <a href="https://www.credly.com/badges/b445431b-4e7a-4c61-b988-ff8d3561bbcc/public_url">(View Credential)</a>
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fa fa-certificate text-warning"></i></span>
-                    Fundamentos Na Lei Geral De Proteção De Dados - LGPDF™
-                    <a href="https://www.credly.com/badges/7c4ca32c-ab7f-4e0d-afe3-da7bfd964483/public_url">(View Credential)</a>
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fa fa-certificate text-warning"></i></span>
-                    Scrum Foundation Professional Certificate - SFPC™
-                    <a href="https://www.credly.com/badges/31882220-35d4-42f3-9a8c-bc8e1bdb2bc6/public_url">(View Credential)</a>
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fa fa-certificate text-warning"></i></span>
-                    Lifelong Learning
-                    <a href="https://www.credly.com/badges/497beb38-c02c-4ece-a168-ec439c8c84b5/public_url">(View Credential)</a>
-                </li>
+
+    <!-- Experience -->
+    <section id="experience" class="scroll-mt-24 md:scroll-mt-28 py-12 border-t border-slate-200 dark:border-slate-800">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-2xl font-bold">Professional Experience</h2>
+        <div id="experienceList" class="mt-6 grid gap-6"></div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="scroll-mt-24 md:scroll-mt-28 py-12 border-t border-slate-200 dark:border-slate-800">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-2xl font-bold">Education & Certifications</h2>
+        <div id="educationList" class="mt-6 grid gap-6 md:grid-cols-2"></div>
+      </div>
+    </section>
+
+
+    <!-- Featured Project -->
+    <section id="project" class="scroll-mt-24 md:scroll-mt-28 py-12 border-t border-slate-200 dark:border-slate-800">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-2xl font-bold">Featured Project</h2>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Real-time Chat Application showcasing enterprise-level architecture and best practices.</p>
+        <div class="mt-6 grid md:grid-cols-2 gap-6 items-start">
+          <a id="featuredRepoLink" class="block rounded-lg border border-slate-200 dark:border-slate-800 overflow-hidden hover:ring-2 hover:ring-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600" target="_blank" rel="noopener" aria-label="Open Chat App repository on GitHub">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=motirck&repo=chat-app&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&border_color=30363d&show_owner=true" alt="GitHub pinned card for motirck/chat-app" class="w-full h-full object-cover" loading="lazy" />
+          </a>
+          <div>
+            <h3 class="text-lg font-semibold">Key Features:</h3>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li class="flex gap-2"><span>⚡</span><span>Real-time Messaging: Built with ASP.NET Core SignalR.</span></li>
+              <li class="flex gap-2"><span>🔐</span><span>Secure Authentication: Implemented using ASP.NET Identity.</span></li>
+              <li class="flex gap-2"><span>💹</span><span>Stock Quote Bot: Fetches and displays stock data in chat rooms.</span></li>
+              <li class="flex gap-2"><span>🐰</span><span>Message Brokering: Decoupled architecture using RabbitMQ.</span></li>
+              <li class="flex gap-2"><span>🧱</span><span>Clean Architecture: Follows best practices for maintainability and scalability.</span></li>
             </ul>
-            <h2 class="mb-3">Prêmios</h2>
-            <ul class="fa-ul mb-3">
-                <li>
-                    <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                    English: CEFR Level C1 - Certificate of Achievement (Rosetta Stone) 🍾
-                </li>
-<!--                <li>-->
-<!--                    <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>-->
-<!--                    Ganhador da bolsa de estudos do programa Ignite da <b>Rocketseat</b> 🚀-->
-<!--                </li>-->
-                <li>
-                    <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                    English: C1 Advanced on the official EF SET Certificate™
-                    <a href="https://www.efSept.org/cert/YFuDq8">(View Credential)</a> 🍾
-                </li>
-            </ul>
-            <h2 class="mb-3">Certificados</h2>
-            <ul class="fa-ul mb-0">
-                <li>
-                    <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                    <b>TypeScript Fundamentals</b>
-                    <a href="https://metododotnet.luisdev.com.br/certificates/Q5zw5N">(View Credential)</a>
-                    <br>
-                    <b>Company:</b> LuisDEV, Modality: Online, Workload: 6H
-                </li>
-                <li class="mt-3">
-                    <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                    <b>Front-End Development with Angular</b>
-                    <a href="https://metododotnet.luisdev.com.br/certificates/QrOvOw">(View Credential)</a>
-                    <br>
-                    <b>Company:</b> LuisDEV, Modality: Online, Workload: 20H
-                </li>
-                <li class="mt-3">
-                    <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                    <b>Docker Uncomplicated</b>
-                    <a href="https://www.linuxtips.io/certificate_v2/634ffe2b3e60c56d9901655f/user/636bf4aed0d968035f019a4f">(View Credential)</a>
-                    <br>
-                    <b>Company:</b> LINUXtips, Modality: Online, Workload: 40H
-                </li>
-                <li class="mt-3">
-                    <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                    <b>Software Architect Training</b>
-                    <a href="https://desenvolvedor.io/certificado/f6249a0f-92de-4fa1-bae1-5de4501c94c5">(View Credential)</a>
-                    <br>
-                    <b>Company:</b> desenvolvedor.io, Modality: Online, Workload: 54H
-                </li>
-                <li class="mt-3">
-                    <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                    <b>Mastering Software Testing</b>
-                    <a href="https://desenvolvedor.io/certificado/f2e7e3ac-0c36-47f9-a637-aeedf5cbb7f4">(View Credential)</a>
-                    <br>
-                    <b>Company:</b> desenvolvedor.io, Modality: Online, Workload: 21H
-                </li>
-                <li class="mt-3">
-                    <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                    <b>Rich Domain Modeling</b>
-                    <a href="https://desenvolvedor.io/certificado/06e9d41b-fd6d-4ae2-9c0a-cc0a95abdc52">(View Credential)</a>
-                    <br>
-                    <b>Company:</b> desenvolvedor.io, Modality: Online, Workload: 20H
-                </li>
-                <li class="mt-3">
-                    <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                    <b>Software Architecture Fundamentals</b>
-                    <a href="https://desenvolvedor.io/certificado/3b523db1-4b60-4fe1-84e2-5e9646027b1a">(View Credential)</a>
-                    <br>
-                    <b>Company:</b> desenvolvedor.io, Modality: Online, Workload: 13H
-                </li>
-                <li class="mt-3">
-                    <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                    <b>REST with ASP.NET Core WebAPI (C#)</b>
-                    <a href="https://desenvolvedor.io/certificado/ddccc809-ca66-45c5-9be3-53b3bdd47350">(View Credential)</a>
-                    <br>
-                    <b>Company:</b> desenvolvedor.io, Modality: Online, Workload: 13H
-                </li>
-                <li class="mt-3">
-                    <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                    <b>Mastering ASP.NET MVC Core (C#)</b>
-                    <a href="https://desenvolvedor.io/certificado/3b64d88c-de9e-4edf-8c43-327b0542ce23">(View Credential)</a>
-                    <br>
-                    <b>Company:</b> desenvolvedor.io, Modality: Online, Workload: 21H
-                </li>
-                <li class="mt-3">
-                    <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                    <b>C# Programming Language - Advanced Course</b>
-                    <br>
-                    Para visualizar, informe a credencial "CC18BD3B-638F-4BCD-B02A-AAB59B8C5E19"
-                    <a href="https://www.ev.org.br/validar-certificado">(View Credential)</a>
-                    <br>
-                    <b>Company:</b> Fundação Bradesco, Modality: Online, Workload: 12H
-                </li>
-                <li class="mt-3">
-                    <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                    <b>LGPD Essentials Course - Legal and Technical Interpretation of Law No. 13.709</b>
-                    <a href="https://www.tiexames.com.br/certificado/?100411-185">(View Credential)</a>
-                    <br>
-                    <b>Company:</b> TIexames, Modality: Online, Workload: 2,5H
-                </li>
-            </ul>
+            <div class="mt-5">
+              <a id="featuredRepoBtn" class="btn-primary" target="_blank" rel="noopener" aria-label="View Chat App on GitHub">View on GitHub</a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <hr class="m-0"/>
-    <section class="resume-section" id="skills">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Skills</h2>
-            <div class="subheading mb-3 word-spacing-text">Programming Languages </div>
 
-            <img alt="CSharp" title="C Sharp" height="48" src="assets/img/csharp.png">
-            <!--            <img alt="NodeJS" title="NodeJS" height="48" src="assets/img/nodejs.png">-->
-            <!--            <img alt="C" title="C" height="52" src="assets/img/c_language.png">-->
-            <!--            <img alt="C++" title="C++" height="48" src="assets/img/c_plus_plus.png">-->
-            <img alt="Angular" title="Angular" height="50" src="assets/img/angular.png">
-            <img alt="JavaScript" title="JS" height="48" src="assets/img/js-square.png">
-            <img alt="TypesCript" title="TS" height="48" src="assets/img/ts-square.png">
-            <img alt="HTML" title="HTML" height="50" src="assets/img/html5.png">
-            <img alt="CSS" title="CSS" height="50" src="assets/img/css3.png">
-
-
-            <div class="subheading mb-3 mt-5">Tools</div>
-
-            <img alt="JetBrains Rider" title="JetBrains Rider" height="55" src="assets/img/rider.png">
-            <img alt="Docker" title="Docker" height="55" src="assets/img/docker.png">
-            <img alt="VSCode" title="VSCode" height="48" src="assets/img/vscode.png">
-            <img alt="Github" title="Github" height="48" src="assets/img/github.png">
-            <!--            <img alt="Sass" title="Sass" height="50" src="assets/img/sass.svg" width="40"/>-->
-            <!--            <img alt="Bootstrap" height="44" src="assets/img/bootstrap.png">-->
-            <!--            <img alt="npm" height="44" src="assets/img/npm.png">-->
-
-            <div class="subheading mb-3 mt-5">Databases</div>
-
-            <img alt="SQLServer" title="SQLServer" height="55" src="assets/img/sql-server.png">&nbsp;&nbsp;
-            <img alt="MongoDB" title="MongoDB" height="55" src="assets/img/mongodb.png">
-            <!--            <img alt="DynamoDB" title="DynamoDB" height="55" src="assets/img/dynamodb.png"/>-->
-
-        </div>
+    <!-- Contact -->
+    <section id="contact" class="scroll-mt-24 md:scroll-mt-28 py-12 border-t border-slate-200 dark:border-slate-800">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-2xl font-bold">Contact</h2>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Ready to talk about tech, collaborate on a project, or just say hi? Reach out!</p>
+        <div id="contactLinks" class="mt-6 flex flex-wrap gap-3"></div>
+      </div>
     </section>
-    
-</div>
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>
+  </main>
+
+  <footer class="py-10 border-t border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 text-sm text-slate-500 flex flex-wrap items-center justify-between gap-4">
+      <p>© <span id="year"></span> <span id="footerName"></span>. All rights reserved.</p>
+      <a href="#home" class="hover:text-brand-600">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    // Small helpers for buttons
+    const classes = {
+      btn: 'inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-offset-2',
+      primary: 'bg-brand-600 text-white shadow hover:bg-brand-700 focus:ring-brand-600',
+      secondary: 'bg-slate-900 text-white hover:bg-slate-700 focus:ring-slate-700 dark:bg-white dark:text-slate-900',
+      outline: 'border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 focus:ring-slate-400'
+    };
+    const applyBtnStyles = () => {
+      document.querySelectorAll('.btn').forEach(e=>e.classList.add(...classes.btn.split(' ')));
+      document.querySelectorAll('.btn-primary').forEach(e=>e.classList.add(...(classes.btn + ' ' + classes.primary).split(' ')));
+      document.querySelectorAll('.btn-secondary').forEach(e=>e.classList.add(...(classes.btn + ' ' + classes.secondary).split(' ')));
+      document.querySelectorAll('.btn-outline').forEach(e=>e.classList.add(...(classes.btn + ' ' + classes.outline).split(' ')));
+    };
+    document.addEventListener('DOMContentLoaded', applyBtnStyles);
+  </script>
+  <script src="./script.js"></script>
 </body>
-
 </html>

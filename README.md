@@ -1,5 +1,5 @@
-## Ricardo's portfolio 🚀
+﻿# Ricardo Alves Paula — Portfolio
 
-- Portfolio: https://motirck.github.io/portfolio
-- LinkedIn: https://www.linkedin.com/in/ricardoalvespaula/?locale=en_US
-- Resume (EN-US): ./Ricardo Alves V25 - EN-US.pdf
+This repository contains a simple, fast, and deploy-ready personal portfolio built with HTML, Tailwind CSS (via CDN), and vanilla JavaScript.
+
+- This site is fully static; no build step is required.
