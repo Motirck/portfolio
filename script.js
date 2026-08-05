@@ -9,7 +9,7 @@ const siteConfig = {
     github: 'https://github.com/Motirck',
     repo: 'https://github.com/motirck/chat-app', // Highlighted featured project repository
     email: 'mailto:ricardo.alves.p001@gmail.com',
-    summary: `Ricardo is an accomplished Software Developer with 8 years of experience delivering high-quality, scalable, and efficient software solutions across different industries. With 7 years of expertise in the .NET ecosystem, he specializes in C#, .NET Core, ASP.NET Web API, SignalR, RESTful APIs, and microservices architecture, while also bringing hands-on experience with Node.js, Angular, VB5, and VBA.
+    summary: `Ricardo is an accomplished Software Developer with 9 years of experience delivering high-quality, scalable, and efficient software solutions across different industries. With expertise in the .NET ecosystem, he specializes in C#, .NET Core, ASP.NET Web API, SignalR, RESTful APIs, and microservices architecture, while also bringing hands-on experience with Node.js, Angular, VB5, and VBA.
 
 Ricardo is highly communicative and proactive, encouraging best practices in Clean Code, Design Patterns, and SOLID principles, while mentoring team members and promoting collaborative growth. He thrives in agile environments (SAFe, Scrum) and actively contributes to improving team deliveries through retrospectives and knowledge sharing.`,
     highlights: [
