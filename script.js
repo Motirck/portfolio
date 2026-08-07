@@ -8,7 +8,7 @@ const siteConfig = {
     repo: 'https://github.com/Motirck/chat-app', // Highlighted featured project repository
     email: 'mailto:ricardo.alves.p001@gmail.com',
     en: {
-        role: 'Senior .NET Developer',
+        role: 'Senior Software Engineer',
         location: 'Timóteo, MG — Brazil',
         summary: `Senior Software Engineer with 9+ years of experience designing, developing, and modernizing software solutions across energy, manufacturing, automotive, and e-commerce industries. Specialized in backend development using C#, .NET, ASP.NET Core, Azure, microservices, REST APIs, and modern software architecture, with a strong background in designing scalable distributed systems using Domain-Driven Design (DDD), Clean Architecture, and SOLID principles.
 
@@ -392,13 +392,13 @@ function render() {
                 if (parts.length >= 2) {
                     const user = parts[0];
                     const repo = parts[1];
-                    featuredRepoImg.src = `https://github-readme-stats.vercel.app/api/pin/?username=${user}&repo=${repo}&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&border_color=30363d&show_owner=true&cache_seconds=3600`;
+                    featuredRepoImg.src = `https://gh-card.dev/repos/${user}/${repo}.svg`;
                     featuredRepoImg.alt = `GitHub pinned card for ${user}/${repo}`;
                     featuredRepoImg.onerror = function() {
-                        if (this.src.includes('github-readme-stats')) {
-                            this.src = `https://gh-card.dev/repos/${user}/${repo}.svg`;
-                        } else if (this.src.includes('gh-card.dev')) {
+                        if (this.src.includes('gh-card.dev')) {
                             this.src = `https://opengraph.githubassets.com/1/${user}/${repo}`;
+                        } else if (this.src.includes('opengraph.githubassets.com')) {
+                            this.src = `https://github-readme-stats.vercel.app/api/pin/?username=${user}&repo=${repo}&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&border_color=30363d&show_owner=true&cache_seconds=3600`;
                         } else {
                             this.src = 'assets/img/github.png';
                             this.onerror = null;
