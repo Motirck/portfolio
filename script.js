@@ -125,7 +125,7 @@ Known for combining hands-on software development with architectural thinking, m
     },
     pt: {
         role: 'Desenvolvedor .NET Sênior',
-        location: 'Timóteo, MG — Brasil',
+        location: 'Timóteo, Minas Gerais — Brasil',
         summary: `Engenheiro de Software Sênior com mais de 9 anos de experiência projetando, desenvolvendo e modernizando soluções de software nos setores de energia, manufatura, automotivo e e-commerce. Especializado em desenvolvimento backend usando C#, .NET, ASP.NET Core, Azure, microsserviços, APIs REST e arquitetura de software moderna, com sólida experiência no projeto de sistemas distribuídos escaláveis usando Domain-Driven Design (DDD), Clean Architecture e princípios SOLID.
 
 Reconhecido por combinar o desenvolvimento prático de software com pensamento arquitetural, mentoria de engenheiros e colaboração com Product Owners, Analistas de Negócios, engenheiros de QA e equipes multifuncionais. Apaixonado por resolver problemas complexos de engenharia, desde a arquitetura e design do sistema até a implementação.`,
