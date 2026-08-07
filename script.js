@@ -9,7 +9,7 @@ const siteConfig = {
     email: 'mailto:ricardo.alves.p001@gmail.com',
     en: {
         role: 'Senior Software Engineer',
-        location: 'Timóteo, MG — Brazil',
+        location: 'Timóteo, Minas Gerais — Brazil',
         summary: `Senior Software Engineer with 9+ years of experience designing, developing, and modernizing software solutions across energy, manufacturing, automotive, and e-commerce industries. Specialized in backend development using C#, .NET, ASP.NET Core, Azure, microservices, REST APIs, and modern software architecture, with a strong background in designing scalable distributed systems using Domain-Driven Design (DDD), Clean Architecture, and SOLID principles.
 
 Known for combining hands-on software development with architectural thinking, mentoring engineers, and collaborating with Product Owners, Business Analysts, QA engineers, and cross-functional teams. Passionate about solving complex engineering problems from architecture and system design through implementation.`,
