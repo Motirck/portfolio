@@ -521,7 +521,7 @@ function render() {
                 },
                 {
                     name: 'Microsoft Teams',
-                    img: 'https://upload.wikimedia.org/wikipedia/commons/c/c9/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg',
+                    img: 'assets/img/teams-logo.png',
                     alt: 'Microsoft Teams'
                 },
                 {name: 'BitBucket', img: 'https://skillicons.dev/icons?i=bitbucket', alt: 'BitBucket'},
