@@ -4,110 +4,78 @@
 const siteConfig = {
     name: 'Ricardo Alves Paula',
     role: 'Senior .NET Developer',
-    location: 'Timóteo, MG — Brazil',
+    location: 'Timóteo, Minas Gerais — Brazil',
     linkedin: 'https://www.linkedin.com/in/ricardoalvespaula/?locale=en_US',
     github: 'https://github.com/Motirck',
-    repo: 'https://github.com/motirck/chat-app', // Highlighted featured project repository
+    repo: 'https://github.com/Motirck/chat-app', // Highlighted featured project repository
     email: 'mailto:ricardo.alves.p001@gmail.com',
-    summary: `Ricardo is an accomplished Software Developer with 8 years of experience delivering high-quality, scalable, and efficient software solutions across different industries. With 7 years of expertise in the .NET ecosystem, he specializes in C#, .NET Core, ASP.NET Web API, SignalR, RESTful APIs, and microservices architecture, while also bringing hands-on experience with Node.js, Angular, VB5, and VBA.
+    summary: `Senior Software Engineer with 9+ years of experience designing, developing, and modernizing software solutions across energy, manufacturing, automotive, and e-commerce industries. Specialized in backend development using C#, .NET, ASP.NET Core, Azure, microservices, REST APIs, and modern software architecture, with a strong background in designing scalable distributed systems using Domain-Driven Design (DDD), Clean Architecture, and SOLID principles.
 
-Ricardo is highly communicative and proactive, encouraging best practices in Clean Code, Design Patterns, and SOLID principles, while mentoring team members and promoting collaborative growth. He thrives in agile environments (SAFe, Scrum) and actively contributes to improving team deliveries through retrospectives and knowledge sharing.`,
+Known for combining hands-on software development with architectural thinking, mentoring engineers, and collaborating with Product Owners, Business Analysts, QA engineers, and cross-functional teams. Passionate about solving complex engineering problems from architecture and system design through implementation.`,
     highlights: [
-        '8 years building scalable software across multiple industries',
-        '7 years in the .NET ecosystem (C#, .NET Core, ASP.NET Web API, SignalR)',
-        'Strong with RESTful APIs and microservices architecture',
-        'Hands-on with Node.js, Angular, VB5, and VBA',
-        'Strongly support Clean Code, SOLID, and Design Patterns; mentors teams',
-        'Thrives in Agile (SAFe/Scrum); drives improvements via retrospectives'
+        '9+ years building scalable software across multiple industries',
+        'Specialized in C#, .NET, ASP.NET Core, and Azure',
+        'Strong background in DDD, Clean Architecture, and SOLID principles',
+        'Experience with microservices and AI-assisted development workflows',
+        'Proven track record of improving performance and reducing operational effort',
+        'Passionate about mentoring and collaborative growth in agile environments'
     ],
     skills: [
-        'GitHub Copilot', 'JetBrains AI', 'C#', 'ASP.NET Core', '.NET', 'Entity Framework', 'RESTful', 'SignalR', 'Microservices', 'Azure', 'AWS', 'Rider IDE (JetBrains)', 'Dynatrace', 'Grafana', 'ConfigCat (Feature Flag/ Feature Toggle)', 'Docker', 'Kubernetes', 'xUnit (tests)', 'Redis', 'Oracle', 'SQLServer', 'MongoDB', 'JavaScript', 'TypeScript', 'Angular', 'GitHub Actions', 'Azure DevOps (ADO)', 'BitBucket', 'Jira', 'Google Workspace', 'Slack', 'Microsoft Teams', 'Agile Methodologies'
+        'C#', '.NET', 'ASP.NET Core', 'Azure', 'AWS', 'Microservices', 'REST APIs', 'SignalR', 'Domain-Driven Design (DDD)', 'CQRS', 'SOLID', 'Clean Architecture', 'MongoDB', 'SQL Server', 'Oracle', 'Entity Framework', 'xUnit', 'Jest', 'Docker', 'Kubernetes', 'GitHub Actions', 'Azure DevOps', 'Terraform', 'Node.js', 'Angular', 'TypeScript', 'JavaScript', 'Rider', 'VS Code', 'Jira', 'SonarQube', 'Dynatrace', 'Grafana', 'Elastic'
     ],
     experience: [
         {
-            company: 'Insight Global (Halliburton)',
+            company: 'Halliburton (Contractor through Insight Global)',
             title: 'Senior .NET Developer',
-            period: '2023 – Present',
+            period: 'Nov 2023 – Present',
             details: [
-                'Industries: Oil & Gas',
-                'Full Stack Development using .NET (90%) and Angular (10%)',
-                'Back-end Development: .NET using ASP.NET Core - C#',
-                'Using Azure AI services such as Azure AI Translator, etc',
-                'Front-end Development: Angular',
-                'Database: MongoDB',
-                'Using LINQ for deferred execution and concise/readable code',
-                'Technologies: SignalR, RESTful API, Microservices',
-                'Testing: Unit testing with Xunit (using Moq and Fixtures)',
-                'Deployment: CI/CD pipelines with Azure, Docker',
-                'Best Practices: SOLID principles, Clean Code, Domain-Driven Design (DDD)',
-                'Methodology: Agile (Scrum)',
-                'Version Control: Git (Gitflow) and Azure'
+                'Designed and implemented an AI-assisted development workflow using custom code generation and automated code review agents, reducing PR review effort by 30%.',
+                'Improved application performance by 40% through MongoDB indexing, caching strategies, and materialized views.',
+                'Designed the architecture of new microservices using DDD, SOLID, and Clean Architecture.',
+                'Developed backend services using C#, ASP.NET Core, REST APIs, SignalR, MongoDB, and Azure, integrating Azure AI Translator.',
+                'Resolved critical production incidents through root-cause analysis and permanent fixes.',
+                'Mentored junior developers and promoted engineering best practices across the team.'
             ],
-            stack: ['REST', 'SignalR', 'C#', '.NET', 'Angular', 'DDD', 'xUnit', 'Clean Code', 'Mediator', 'Design Patterns', 'Docker', 'Kubernetes']
+            stack: ['C#', '.NET', 'ASP.NET Core', 'Azure', 'REST APIs', 'SignalR', 'MongoDB', 'DDD', 'Clean Architecture', 'SOLID', 'xUnit']
         },
         {
             company: 'CWI Software',
             title: 'Mid .NET Developer',
-            period: '2022 – 2023',
+            period: 'May 2022 – Nov 2023',
             details: [
-                'Industries: E-Commerce',
-                '.NET development using ASP.NET Core and C# for brazilian client Casas Bahia',
-                'Database used: SQLServer and MongoDB',
-                'Unit testing with Xunit (using Moq and Fixtures)',
-                'Using LINQ for deferred execution and concise/readable code',
-                'Design Patterns used: Circuit Breaker, Chain Of Responsibility, Factory, etc.',
-                'Consumption of CI/CD pipelines GitHub Actions',
-                'Docker and Kubernetes',
-                'Application of SOLID and Clean Code principles',
-                'Using the CQRS standard',
-                'Domain-Driven Design (DDD)',
-                'Agile methodology used: Scrum',
-                'Using tools like Dynatrace, Elastic Search and Grafana',
-                'Using SonarQube to ensure source code quality',
-                'Version Control: Git (Gitflow) and GitHub'
+                'Improved API response times by 20–30% by implementing CQRS and migrating read operations from SQL Server to MongoDB.',
+                'Modernized a legacy discount platform by migrating a microservice from .NET Framework to .NET.',
+                'Introduced unit testing and SonarQube, improving code quality and maintainability.',
+                'Developed scalable backend services using C#, ASP.NET Core, Entity Framework, and DDD.',
+                'Built and supported containerized applications using Docker, Kubernetes, and GitHub Actions.',
+                'Collaborated in Agile Scrum teams with POs, BAs, and QA engineers.'
             ],
-            stack: ['C#', '.NET', 'DDD', 'xUnit', 'Clean Code', 'CQRS', 'Mediator', 'Design Patterns', 'Docker', 'Kubernetes', 'Dynatrace', 'Grafana', 'GitHub Actions']
+            stack: ['C#', '.NET', 'ASP.NET Core', 'Entity Framework', 'CQRS', 'MongoDB', 'SQL Server', 'DDD', 'Docker', 'Kubernetes', 'SonarQube', 'GitHub Actions']
         },
         {
             company: 'Stefanini IT Solutions',
             title: 'Mid .NET Developer',
-            period: '2020 – 2022',
+            period: 'Oct 2020 – May 2022',
             details: [
-                'Industries: Integrated energy and Marketing',
-                'Back-end development using ASP.NET Core - C# and NodeJS, and some Front-end development tasks using AngularJS, for the clients Raizen and Jackson Dawson',
-                'Azure DevOps',
-                'Design Patterns',
-                'Application of SOLID, Clean Code, and Clean Architecture',
-                'Domain-Driven Design (DDD)',
-                'Database used: SQLServer, Dynamo / Dynamoose and MySQL / Sequelize',
-                'Version Control: Git and SVN (Trunk Based Development and Gitflow) and BitBucket',
-                'Unit tests with Xunit (using Moq and Fixtures) and Jest',
-                'Entity Framework as ORM for the .NET projects',
-                'Use of Serverless Framework',
-                'Dependency injection with TypeDI',
-                'Use of Microservices',
-                'AWS - Amazon Web Services (SNS, SQS, Dynamo, Cloud Watch, SSM, S3)',
-                'Terraform',
-                'Agile methodology used: Scrum and Scaled Agile Framework® (SAFe®)',
-                'Use of SonarQube to ensure source code quality',
-                'Use of Management 3.0 in all projects',
-                'Deliveries made by sprints with MVP techniques'
+                'Collaborated with an international client (Jackson Dawson – US) to design .NET microservices using DDD and Clean Architecture.',
+                'Developed backend microservices using Node.js for the Shell Box mobile application.',
+                'Designed and developed backend solutions using C#, .NET, ASP.NET Core, and Entity Framework.',
+                'Developed cloud-native solutions on AWS using SQS, SNS, S3, CloudWatch, SSM, Terraform, and Serverless Framework.',
+                'Collaborated with distributed teams using Agile Scrum and SAFe.'
             ],
-            stack: ['C#', '.NET', 'Angular', 'Node.js', 'xUnit', 'Jest', 'DDD', 'Clean Code', 'Design Patterns', 'BitBucket', 'ConfigCat']
+            stack: ['C#', '.NET', 'ASP.NET Core', 'Node.js', 'AWS', 'Terraform', 'DDD', 'Clean Architecture', 'SOLID', 'Microservices']
         },
         {
             company: 'Tesis IT & One Way Consulting',
             title: 'Mid .NET Developer',
-            period: '2018 – 2020',
+            period: 'Aug 2018 – Sep 2020',
             details: [
-                'Industries: Steel Manufacturing',
-                'Back-end Development (.NET Framework - C#) using MVC, Front-end development (Angular 6), for the client Aperam South America',
-                'Migration of internal systems made in Visual Basic 5 (VB5) to WEB using Angular Framework (TypeScript, JavaScript, Node.js, HTML5, SCSS, Bootstrap) and .NET (WebAPI)',
-                'Database used: Oracle',
-                'Creation of Services in C# language to be intermediaries between C++ (which accesses the Oracle Database) and the Applications Front-end',
-                'Version control of systems using Git and Azure DevOps Server'
+                'Modernized legacy VB5 systems by migrating them to Angular and .NET.',
+                'Developed APIs and web applications using C#, .NET, Angular, and Oracle.',
+                'Integrated web systems with C++ components and Oracle databases.',
+                'Worked in agile environments with Git and Azure DevOps.'
             ],
-            stack: ['C#', '.NET', 'Angular', 'VBA', 'VB5']
+            stack: ['C#', '.NET', 'Angular', 'Oracle', 'VB5', 'C++', 'Azure DevOps']
         },
         {
             company: 'Aperam South America',
@@ -126,27 +94,27 @@ Ricardo is highly communicative and proactive, encouraging best practices in Cle
     ],
     education: [
         {
-            name: 'MBA in Full Cycle Architecture',
-            org: 'FCTech University, Online Program, Brazil',
+            name: 'MBA, Full Cycle Architecture (In Progress)',
+            org: 'FCTech University',
             period: '2025 – Present'
         },
-        {name: 'Bachelor’s Degree in Computer Science', org: 'Única College, Ipatinga, Brazil', period: '2018 – 2021'},
+        {name: 'Bachelor of Computer Science', org: 'Única College of Ipatinga', period: ''},
         {
-            name: 'Technical Degree in Software Engineering',
-            org: 'Minas Gerais Federal Center for Technological Education (CEFET-MG), Timoteo, Brazil',
-            period: '2015 – 2017'
+            name: 'Computer Technician',
+            org: 'CEFET-MG',
+            period: ''
         }
     ],
     certifications: [
-        {title: 'Docker Certified', img: 'assets/certifications/badge-docker.png', alt: 'Docker certification badge'},
-        {title: 'Scrum Master', img: 'assets/certifications/scrum.png', alt: 'Scrum Master certification badge'},
-        {title: 'LGPD Compliance', img: 'assets/certifications/lgpd.png', alt: 'LGPD Compliance certification badge'},
+        {title: 'Docker Uncomplicated (Linux Tips)', img: 'assets/certifications/badge-docker.png', alt: 'Docker certification badge'},
+        {title: 'Scrum Foundation Professional Certification (SFPC™)', img: 'assets/certifications/scrum.png', alt: 'Scrum Master certification badge'},
+        {title: 'LGPD Fundamentals (LGPDF™)', img: 'assets/certifications/lgpd.png', alt: 'LGPD Compliance certification badge'},
         {
-            title: 'Remote Work Pro',
+            title: 'Remote Work & Virtual Collaboration Professional (RWVCP™)',
             img: 'assets/certifications/remote-work.png',
             alt: 'Remote Work Pro certification badge'
         },
-        {title: 'Lifelong Learner', img: 'assets/certifications/lifelong-learning.png', alt: 'Lifelong Learner badge'}
+        {title: 'Lifelong Learning (LLL)', img: 'assets/certifications/lifelong-learning.png', alt: 'Lifelong Learner badge'}
     ]
 };
 
@@ -172,6 +140,8 @@ function render() {
     const btnProject = document.getElementById('btnProject');
     const featuredRepoBtn = document.getElementById('featuredRepoBtn');
     const featuredRepoLink = document.getElementById('featuredRepoLink');
+    const featuredRepoImg = featuredRepoLink ? featuredRepoLink.querySelector('img') : null;
+
     [btnProject, featuredRepoBtn, featuredRepoLink].forEach(a => {
         if (!a) return;
         if (repoHref && repoHref !== 'https://github.com/') {
@@ -179,6 +149,27 @@ function render() {
             a.style.display = '';
             a.target = '_blank';
             a.rel = 'noopener';
+
+            // Update featured project image dynamically if it's a GitHub repo
+            if (a === featuredRepoLink && featuredRepoImg && repoHref.includes('github.com')) {
+                const parts = repoHref.replace('https://github.com/', '').split('/');
+                if (parts.length >= 2) {
+                    const user = parts[0];
+                    const repo = parts[1];
+                    featuredRepoImg.src = `https://github-readme-stats.vercel.app/api/pin/?username=${user}&repo=${repo}&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&border_color=30363d&show_owner=true&cache_seconds=3600`;
+                    featuredRepoImg.alt = `GitHub pinned card for ${user}/${repo}`;
+                    featuredRepoImg.onerror = function() {
+                        if (this.src.includes('github-readme-stats')) {
+                            this.src = `https://gh-card.dev/repos/${user}/${repo}.svg`;
+                        } else if (this.src.includes('gh-card.dev')) {
+                            this.src = `https://opengraph.githubassets.com/1/${user}/${repo}`;
+                        } else {
+                            this.src = 'assets/img/github.png';
+                            this.onerror = null;
+                        }
+                    };
+                }
+            }
         } else {
             a.style.display = 'none';
         }
